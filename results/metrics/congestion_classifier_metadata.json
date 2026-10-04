@@ -1,0 +1,47 @@
+{
+  "model": "shared_xgboost_congestion_classifier",
+  "sensor_count": 207,
+  "input_feature_count": 26,
+  "forecast_dependency": "GRU predicted future speed is used as an XGBoost classifier feature.",
+  "feature_names": [
+    "current_speed_mean",
+    "current_speed_std",
+    "current_speed_min",
+    "current_speed_max",
+    "previous_speed_mean",
+    "previous_speed_std",
+    "speed_change_mean",
+    "speed_change_std",
+    "long_term_speed_change",
+    "sequence_speed_mean",
+    "sequence_speed_std",
+    "recent_speed_mean",
+    "recent_speed_std",
+    "near_zero_fraction",
+    "low_speed_fraction",
+    "moderate_speed_fraction",
+    "high_speed_fraction",
+    "hour",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week",
+    "day_sin",
+    "day_cos",
+    "is_weekend",
+    "gru_predicted_speed",
+    "sensor_index"
+  ],
+  "class_names": [
+    "LOW",
+    "MODERATE",
+    "SEVERE"
+  ],
+  "training_cap": 1000000,
+  "class_weighting": "balanced",
+  "reference_speed": "sensor-specific training-data P85",
+  "congestion_index": "1 - future_speed / reference_speed",
+  "label_thresholds": {
+    "low_moderate": 0.1,
+    "moderate_severe": 0.3
+  }
+}

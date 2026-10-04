@@ -1,0 +1,44 @@
+{
+  "model": "shared_xgboost_congestion_classifier",
+  "classes": [
+    "LOW",
+    "MODERATE",
+    "SEVERE"
+  ],
+  "label_definition": {
+    "low": "CI < 0.10",
+    "moderate": "0.10 <= CI < 0.30",
+    "severe": "CI >= 0.30"
+  },
+  "validation": {
+    "accuracy": 0.7938585330822688,
+    "macro_precision": 0.7310600559919008,
+    "macro_recall": 0.7797372659038192,
+    "macro_f1": 0.7390378805639058,
+    "weighted_f1": 0.813125833401995
+  },
+  "test": {
+    "accuracy": 0.7926200381348587,
+    "macro_precision": 0.7354077733849257,
+    "macro_recall": 0.7811125230976171,
+    "macro_f1": 0.742118582005066,
+    "weighted_f1": 0.8114280534406583
+  },
+  "training_observations_original": 4963032,
+  "training_observations_used": 1000000,
+  "validation_observations": 1061082,
+  "test_observations": 1061496,
+  "model_configuration": {
+    "n_estimators": 150,
+    "max_depth": 5,
+    "learning_rate": 0.08,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "random_state": 42,
+    "n_jobs": -1,
+    "objective": "multi:softprob",
+    "num_class": 3,
+    "tree_method": "hist"
+  }
+}

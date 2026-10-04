@@ -1,0 +1,29 @@
+{
+  "experiment": "sprint_3.4_gru",
+  "model_name": "gru",
+  "forecast_horizon_minutes": 5,
+  "sequence_length": 12,
+  "num_sensors": 207,
+  "training_samples": 23976,
+  "validation_samples": 5126,
+  "test_samples": 5128,
+  "configuration": {
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "epochs": 10,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "device": "cpu"
+  },
+  "validation": {
+    "mae": 10.092170715332031,
+    "rmse": 15.56437873840332,
+    "smape": 34.70932388305664
+  },
+  "test": {
+    "mae": 9.739480972290039,
+    "rmse": 15.552959442138672,
+    "smape": 41.493186950683594
+  }
+}

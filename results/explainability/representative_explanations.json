@@ -1,0 +1,176 @@
+[
+  {
+    "class_id": 0,
+    "class": "LOW",
+    "sample_index": 81,
+    "confidence": 0.9303655028343201,
+    "top_factors": [
+      {
+        "feature": "high_speed_fraction",
+        "shap_value": 0.9492592215538025,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "sensor_index",
+        "shap_value": 0.6066991090774536,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "current_speed_mean",
+        "shap_value": 0.28467151522636414,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "moderate_speed_fraction",
+        "shap_value": 0.08243171870708466,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "hour_cos",
+        "shap_value": 0.08180756866931915,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "recent_speed_mean",
+        "shap_value": 0.07166621088981628,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "previous_speed_mean",
+        "shap_value": 0.07022808492183685,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "hour_sin",
+        "shap_value": 0.0632195696234703,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "hour",
+        "shap_value": 0.0581972561776638,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "sequence_speed_mean",
+        "shap_value": 0.026514388620853424,
+        "direction": "toward_class"
+      }
+    ]
+  },
+  {
+    "class_id": 1,
+    "class": "MODERATE",
+    "sample_index": 4533,
+    "confidence": 0.4913181662559509,
+    "top_factors": [
+      {
+        "feature": "hour",
+        "shap_value": 0.828413724899292,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "low_speed_fraction",
+        "shap_value": -0.7845601439476013,
+        "direction": "away_from_class"
+      },
+      {
+        "feature": "sensor_index",
+        "shap_value": 0.366537868976593,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "recent_speed_mean",
+        "shap_value": -0.3543878495693207,
+        "direction": "away_from_class"
+      },
+      {
+        "feature": "hour_cos",
+        "shap_value": 0.20513981580734253,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "day_sin",
+        "shap_value": 0.17146781086921692,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "high_speed_fraction",
+        "shap_value": 0.16592171788215637,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "hour_sin",
+        "shap_value": 0.15433235466480255,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "current_speed_mean",
+        "shap_value": -0.15393149852752686,
+        "direction": "away_from_class"
+      },
+      {
+        "feature": "day_of_week",
+        "shap_value": 0.0827588438987732,
+        "direction": "toward_class"
+      }
+    ]
+  },
+  {
+    "class_id": 2,
+    "class": "SEVERE",
+    "sample_index": 3492,
+    "confidence": 0.9957119226455688,
+    "top_factors": [
+      {
+        "feature": "low_speed_fraction",
+        "shap_value": 1.0473761558532715,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "sensor_index",
+        "shap_value": 0.7813026905059814,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "recent_speed_std",
+        "shap_value": 0.7034757733345032,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "current_speed_mean",
+        "shap_value": 0.2716026306152344,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "previous_speed_mean",
+        "shap_value": 0.2199954390525818,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "hour",
+        "shap_value": -0.1988278180360794,
+        "direction": "away_from_class"
+      },
+      {
+        "feature": "hour_sin",
+        "shap_value": 0.19390927255153656,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "speed_change_std",
+        "shap_value": 0.1900736391544342,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "sequence_speed_std",
+        "shap_value": 0.15521284937858582,
+        "direction": "toward_class"
+      },
+      {
+        "feature": "recent_speed_mean",
+        "shap_value": 0.14437545835971832,
+        "direction": "toward_class"
+      }
+    ]
+  }
+]

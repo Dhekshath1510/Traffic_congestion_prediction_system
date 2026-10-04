@@ -1,0 +1,67 @@
+[project]
+name = "traffic-congestion-prediction"
+version = "0.1.0"
+description = "AI-Based Traffic Congestion Prediction System"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi==0.116.1",
+    "uvicorn[standard]==0.35.0",
+    "pydantic==2.11.7",
+    "pydantic-settings==2.10.1",
+    "sqlalchemy==2.0.43",
+    "psycopg[binary]==3.2.10",
+    "alembic==1.16.4",
+    "redis==6.4.0",
+    "loguru==0.7.3",
+    "python-dotenv==1.1.1",
+    "numpy==2.3.2",
+    "pandas==2.3.1",
+    "scikit-learn==1.7.1",
+    "xgboost==3.0.4",
+    "lightgbm==4.6.0",
+    "joblib==1.5.1",
+    "httpx==0.28.1",
+    "matplotlib>=3.11.1",
+    "seaborn>=0.13.2",
+    "jupyter>=1.1.1",
+    "ipykernel>=7.3.0",
+    "torch>=2.13.0",
+    "shap>=0.52.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.1",
+    "pytest-asyncio==1.1.0",
+    "pytest-cov==6.2.1",
+    "ruff==0.12.7",
+    "black==25.1.0",
+    "mypy==1.17.1",
+    "pre-commit==4.2.0",
+    "pandas-stubs>=3.0.5.260730",
+    "joblib-stubs>=1.5.3.1.20260117",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.mypy]
+python_version = "3.12"
+explicit_package_bases = true
+mypy_path = "."
+

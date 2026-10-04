@@ -1,0 +1,9 @@
+model_name,split,mae,rmse,smape
+Persistence,Validation,4.0593,9.9222,11.18
+XGBoost,Validation,4.6567,9.543,24.93
+GRU-v1,Validation,10.0922,15.5644,34.71
+GRU-v2,Validation,4.0459,9.8186,25.15
+Persistence,Test,3.8795,9.504,11.02
+XGBoost,Test,4.6272,9.2205,32.77
+GRU-v1,Test,9.7395,15.553,41.49
+GRU-v2,Test,3.904,9.4304,33.01

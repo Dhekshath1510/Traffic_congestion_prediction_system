@@ -1,0 +1,28 @@
+{
+  "experiment": "sprint_4.6",
+  "model": "shared_xgboost_congestion_classifier",
+  "explainer": "TreeSHAP",
+  "evaluation_sample_size": 10000,
+  "feature_count": 25,
+  "classes": [
+    "LOW",
+    "MODERATE",
+    "SEVERE"
+  ],
+  "high_confidence_threshold": 0.8,
+  "low_confidence_threshold": 0.5,
+  "top_n_features": 10,
+  "prediction_distribution": {
+    "LOW": 4380,
+    "MODERATE": 2276,
+    "SEVERE": 3344
+  },
+  "actual_distribution": {
+    "LOW": 6369,
+    "MODERATE": 1265,
+    "SEVERE": 2366
+  },
+  "mean_confidence": 0.6060923902660609,
+  "median_confidence": 0.5785315632820129,
+  "mean_explanation_strength": 1.2173482457727194
+}

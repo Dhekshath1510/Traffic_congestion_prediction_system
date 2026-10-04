@@ -1,0 +1,45 @@
+{
+  "experiment": "sprint_4.5",
+  "explainer": "TreeSHAP",
+  "model": "shared_xgboost_congestion_classifier",
+  "classes": [
+    "LOW",
+    "MODERATE",
+    "SEVERE"
+  ],
+  "feature_count": 25,
+  "feature_names": [
+    "current_speed_mean",
+    "current_speed_std",
+    "current_speed_min",
+    "current_speed_max",
+    "previous_speed_mean",
+    "previous_speed_std",
+    "speed_change_mean",
+    "speed_change_std",
+    "long_term_speed_change",
+    "sequence_speed_mean",
+    "sequence_speed_std",
+    "recent_speed_mean",
+    "recent_speed_std",
+    "near_zero_fraction",
+    "low_speed_fraction",
+    "moderate_speed_fraction",
+    "high_speed_fraction",
+    "hour",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week",
+    "day_sin",
+    "day_cos",
+    "is_weekend",
+    "sensor_index"
+  ],
+  "shap_sample_size": 10000,
+  "random_state": 42,
+  "aggregation": "mean absolute SHAP across samples and classes for global importance",
+  "individual_explanation": {
+    "test_instance": 0,
+    "top_features": 10
+  }
+}

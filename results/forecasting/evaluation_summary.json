@@ -1,0 +1,50 @@
+{
+  "experiment": "sprint_3.4d",
+  "forecast_horizon_minutes": 5,
+  "num_sensors": 207,
+  "sequence_length": 12,
+  "models": [
+    "Persistence",
+    "XGBoost",
+    "GRU-v1",
+    "GRU-v2"
+  ],
+  "figures": [
+    "forecasting_model_comparison.png",
+    "gru_actual_vs_predicted.png",
+    "gru_residual_distribution.png",
+    "gru_per_sensor_mae.png",
+    "gru_residual_comparison.png"
+  ],
+  "prediction_level_evaluation": {
+    "gru_v1_validation": {
+      "model_name": "GRU-v1",
+      "split": "Validation",
+      "mae": 10.092170715332031,
+      "rmse": 15.56437873840332,
+      "smape": 34.70932388305664
+    },
+    "gru_v1_test": {
+      "model_name": "GRU-v1",
+      "split": "Test",
+      "mae": 9.739480972290039,
+      "rmse": 15.552959442138672,
+      "smape": 41.493186950683594
+    },
+    "gru_v2_validation": {
+      "model_name": "GRU-v2",
+      "split": "Validation",
+      "mae": 4.045914649963379,
+      "rmse": 9.818595886230469,
+      "smape": 25.1501522064209
+    },
+    "gru_v2_test": {
+      "model_name": "GRU-v2",
+      "split": "Test",
+      "mae": 3.9039814472198486,
+      "rmse": 9.430448532104492,
+      "smape": 33.00617218017578
+    }
+  },
+  "sensor_count": 207
+}

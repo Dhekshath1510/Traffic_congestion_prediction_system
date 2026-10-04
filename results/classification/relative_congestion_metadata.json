@@ -1,0 +1,34 @@
+{
+  "experiment": "sprint_4.2",
+  "reference_speed_method": "sensor-specific training-data P85",
+  "reference_percentile": 85.0,
+  "near_zero_speed_threshold": 1.0,
+  "congestion_index": "1 - observed_speed / reference_speed",
+  "index_range": [
+    0.0,
+    1.0
+  ],
+  "candidate_thresholds": [
+    {
+      "low_moderate": 0.1,
+      "moderate_severe": 0.3
+    },
+    {
+      "low_moderate": 0.15,
+      "moderate_severe": 0.35
+    },
+    {
+      "low_moderate": 0.2,
+      "moderate_severe": 0.4
+    },
+    {
+      "low_moderate": 0.25,
+      "moderate_severe": 0.45
+    },
+    {
+      "low_moderate": 0.3,
+      "moderate_severe": 0.5
+    }
+  ],
+  "sensor_count": 207
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "sprint_4.3",
+  "label_definition": {
+    "reference_speed": "sensor-specific P85 calculated from training data only",
+    "congestion_index": "1 - future_speed / reference_speed",
+    "low": "CI < 0.10",
+    "moderate": "0.10 <= CI < 0.30",
+    "severe": "CI >= 0.30"
+  },
+  "class_mapping": {
+    "LOW": 0,
+    "MODERATE": 1,
+    "SEVERE": 2
+  },
+  "num_sensors": 207,
+  "feature_count": 24,
+  "feature_design": "Compact temporal, network traffic, speed-change, and calendar features",
+  "forecast_target": "Future traffic speed at the next 5-minute prediction horizon",
+  "data_leakage_control": "Reference speeds are calculated from training data only and reused unchanged for validation and test."
+}
